@@ -1,0 +1,17 @@
+
+class Exercicio01 {
+    /*
+     * Determine as raízes de uma equação de 2º grau: ax2 + bx + c = 0 (recordar que
+     * o discriminante Δ = b2 – 4ac, e que a raiz r = (–b ± √Δ)/2a).
+     */
+    public static double[] ex1(int a, int b, int c) {
+        double r1, r2, delta;
+        delta = (b*b) - (4*a*c);
+        if (delta < 0)
+            return null;
+        r1 = (-b + Math.sqrt(delta))/(2*a);
+        r2 = (-b - Math.sqrt(delta))/(2*a);
+        double[] d = {r1, r2};
+        return d;
+    }
+}
